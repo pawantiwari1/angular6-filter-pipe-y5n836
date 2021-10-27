@@ -1,0 +1,9 @@
+<input type="text" [(ngModel)]="searchText" placeholder="search" />
+<ul>
+  <li class="list" *ngFor="let c of items | filter: searchText">
+    {{ c.title }}
+  </li>
+  <span>length : {{ items.length }} </span>
+  <br />
+  <span> display length: </span>
+</ul>
